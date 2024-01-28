@@ -1,0 +1,11 @@
+(executable
+ (public_name replyer)
+ (name main)
+ (libraries replyer omd cohttp-lwt cohttp-lwt-unix sqlite3 uri ptime tyxml)
+ )
+
+(env
+  (dev
+    (flags (:standard -w -66 -w -69) -w -32 -w -26)))
+
+
